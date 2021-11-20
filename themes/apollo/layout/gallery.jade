@@ -1,0 +1,61 @@
+extends partial/layout
+
+block container
+    script(type='text/javascript', src=url_for('/unitegallery/js/unitegallery.min.js'))
+    script(type='text/javascript', src=url_for('/unitegallery/themes/tiles/ug-theme-tiles.js'))
+    link(rel='stylesheet', href=url_for('/unitegallery/css/unite-gallery.css', type='text/css'))
+    
+    div(id="gallery", style="display:none;")
+    
+    script.
+        var userId = '#{theme.user_id}'
+        var apiKey = '#{theme.api_key}'
+        var photosetId = '#{theme.photoset_id}'
+        var random = #{theme.random}
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=" + apiKey + "&photoset_id=" + photosetId + "&user_id=" + userId + "&extras=&format=json&nojsoncallback=1",
+            "method": "GET",
+            "headers": {}
+        };
+        function shuffle(array) {
+            for (var i = array.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                var temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+        }
+        (function(){
+            const containerWidth = $(window).width() * 0.8;
+            $.ajax(settings).done(function (data) {
+                imgList = [];
+                $.each(data.photoset.photo, function (i, gp) {
+                    let thumbs = 'https://farm' + gp.farm + '.staticflickr.com/' + gp.server + '/' + gp.id + '_' + gp.secret + '.jpg';
+                    let data = 'https://farm' + gp.farm + '.staticflickr.com/' + gp.server + '/' + gp.id + '_' + gp.secret + '_h.jpg';
+                    let title = gp.title;
+                    let desc = "";
+                    let img = '<img alt=' + title + ' src="' + thumbs + '" data-image="' + data + '" data-description="' + desc + '">'
+                    imgList.push(img);
+                });
+                if(random){
+                    shuffle(imgList);
+                }
+                $.each(imgList, function(i, img){
+                    $("#gallery").append(img);
+                })
+                jQuery("#gallery").unitegallery({
+                    tiles_type: "nested",
+                    lightbox_type: "compact",
+                    tiles_nested_optimal_tile_width: 360
+                });
+            });
+        })();
+        
+
+block pagination
+    include partial/comment
+
+block copyright
+    include partial/copyright

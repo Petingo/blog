@@ -1,0 +1,27 @@
+# rename this file as '_config.yml'
+# 將本檔案名稱改為 '_config.yml'
+
+menu:
+    Blog: /
+    Archive: /archives/
+
+favicon: /favicon.png
+logo: /favicon.png
+
+# gallery
+user_id: xxxxxxxxx@xxx
+api_key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+photoset_id: 'xxxxxxxxxxxxxxxxx'
+random: true
+
+# Comment
+# e.g disqus: seansun
+disqus: 
+duoshuo:
+
+# Analytics
+google-analytics:
+ga: UA-xxxxxxxxx-1
+
+# Copyright Infomation
+startyear: 2018
