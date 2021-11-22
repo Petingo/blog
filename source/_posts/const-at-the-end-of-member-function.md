@@ -1,7 +1,9 @@
 ---
 title: const 放在 member function 的後面
 date: 2018-06-01 10:36:31
-tags: C++
+tags:
+    - C++
+    - 資工
 ---
 ### const 放前面與後面的意義
 * 放前面：代表回傳值是 const 的。
@@ -93,7 +95,5 @@ int woof() const { return 55555; }
 ```
 
 ### 寫在後面
-記得第一次遇到這個問題是為了要用 priority queue 而重載 `operator<()`，必須讓它 const 否則會報錯。
-至於後來幾次應該都是為了傳 const reference 的參數進 function（也就是範例的形式）。
-說來慚愧，朋友今天問了我這個問題，雖然也查過、寫過一兩次，但一不小心還是忘了 Orz
-stackoverflow 上的[這篇](https://stackoverflow.com/questions/4059932/what-is-the-meaning-of-a-const-at-end-of-a-member-function)講的還蠻清楚的，但相關的中文資源到底在供三小我也是看沒有，於是寫了這篇，希望我講的夠直白明瞭。
+記得第一次遇到這個問題是為了要用 priority queue 而重載 `operator<()`，必須讓它 const 否則會報錯。至於後來幾次應該都是為了傳 const reference 的參數進 function（也就是範例的形式）。
+stackoverflow 上的[這篇](https://stackoverflow.com/questions/4059932/what-is-the-meaning-of-a-const-at-end-of-a-member-function)講的還蠻清楚的，但中文資源到底在供三小我是看沒有，於是寫了這篇，希望這樣夠直白明瞭。
