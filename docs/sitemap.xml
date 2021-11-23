@@ -2,7 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.petingo.de/2021-autumn/</loc>
+    <loc>https://blog.petingo.de/Arch-12/</loc>
+    
+    <lastmod>2021-11-23</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.petingo.de/VFX-HDR/</loc>
+    
+    <lastmod>2021-11-23</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.petingo.de/Highway-Average-Speed-Prediction/</loc>
+    
+    <lastmod>2021-11-23</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.petingo.de/Digital-Camera-final/</loc>
+    
+    <lastmod>2021-11-23</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.petingo.de/NTUST-Transcript-Generator/</loc>
+    
+    <lastmod>2021-11-22</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.petingo.de/take-a-walk-in-autumn/</loc>
     
     <lastmod>2021-11-22</lastmod>
     
@@ -102,7 +137,7 @@
 
   <url>
     <loc>https://blog.petingo.de/</loc>
-    <lastmod>2021-11-22</lastmod>
+    <lastmod>2021-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -110,70 +145,84 @@
   
   <url>
     <loc>https://blog.petingo.de/tags/Android/</loc>
-    <lastmod>2021-11-22</lastmod>
+    <lastmod>2021-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.petingo.de/tags/%E5%8C%97%E8%88%AA/</loc>
-    <lastmod>2021-11-22</lastmod>
+    <lastmod>2021-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.petingo.de/tags/%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/</loc>
-    <lastmod>2021-11-22</lastmod>
+    <lastmod>2021-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.petingo.de/tags/%E5%8B%95%E7%95%AB%E5%BF%83%E5%BE%97/</loc>
-    <lastmod>2021-11-22</lastmod>
+    <lastmod>2021-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.petingo.de/tags/%E8%B3%87%E5%B7%A5/</loc>
-    <lastmod>2021-11-22</lastmod>
+    <lastmod>2021-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.petingo.de/tags/%E5%BB%BA%E7%AF%89/</loc>
-    <lastmod>2021-11-22</lastmod>
+    <lastmod>2021-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.petingo.de/tags/C/</loc>
-    <lastmod>2021-11-22</lastmod>
+    <lastmod>2021-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.petingo.de/tags/%E9%82%A3%E4%BA%9B%E5%B0%8F%E4%BA%8B/</loc>
-    <lastmod>2021-11-22</lastmod>
+    <lastmod>2021-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.petingo.de/tags/%E5%B1%B1/</loc>
-    <lastmod>2021-11-22</lastmod>
+    <lastmod>2021-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.petingo.de/tags/%E9%83%A8%E8%90%BD%E6%A0%BC/</loc>
-    <lastmod>2021-11-22</lastmod>
+    <lastmod>2021-11-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.petingo.de/tags/Small-Project/</loc>
+    <lastmod>2021-11-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.petingo.de/tags/%E7%AD%86%E8%A8%98/</loc>
+    <lastmod>2021-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
