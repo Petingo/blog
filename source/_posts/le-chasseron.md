@@ -10,7 +10,7 @@ tags:
 今天又匆匆忙忙的趕公車，還好這次有人提醒要帶太陽眼鏡跟手套，不然我可能真的會凍死在山上。
 不過還是少帶了一個東西—登山杖的擋雪片；而且今天去的地方雪都很深，好幾次登山杖插下去都差點拔不出來。
 
-這次的目標是 [Jura](https://zh.wikipedia.org/wiki/%E6%B1%9D%E6%8B%89%E5%B1%B1) 地區的 [Le Chasseron](https://goo.gl/maps/JNVLozFgZyLNPUet5)，需要在 Yverdon les Bains 轉車到 [Sainte Croix](https://zh.wikipedia.org/wiki/%E5%9C%A3%E5%85%8B%E9%B2%81%E7%93%A6_%E6%B2%83%E5%B7%9E)。最後一段路上，火車兩旁盡是平坦的雪丘。
+這次的目標是上次露營車夫婦推薦的 [Le Chasseron](https://goo.gl/maps/JNVLozFgZyLNPUet5)，位在 [Jura](https://zh.wikipedia.org/wiki/%E6%B1%9D%E6%8B%89%E5%B1%B1) 地區，需要在 Yverdon les Bains 轉車到 [Sainte Croix](https://zh.wikipedia.org/wiki/%E5%9C%A3%E5%85%8B%E9%B2%81%E7%93%A6_%E6%B2%83%E5%B7%9E)。最後一段路上，火車兩旁盡是平坦的雪丘。
 <!--more-->
 ![](path1.jpg)
 
@@ -61,7 +61,7 @@ tags:
 下山的時候路太滑，我們還把路當溜滑梯溜了一下。
 ![](light.jpg) ![](light2.jpg)
 
-走到一半發現還有點時間，我們還找了一塊空地想說來堆雪人，但無奈雪太鬆了，堆不起來，只能打雪仗跟棒球（！）
+快下山時發現離太陽下山還有點時間，剛好路邊出現一塊空地，朋友便提議來堆雪人；無奈雪太鬆了，只能打雪仗跟棒球（？
 
 遇到騎馬的父（或阿公）女，好像電影裡的場景。
 <iframe width="100%" height="400px" src="https://www.youtube.com/embed/fBc4HS8VDAI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

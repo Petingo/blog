@@ -4,6 +4,7 @@
 menu:
     Blog: /
     Archive: /archives/
+    Portfolio: https://petingo.ch/
 
 favicon: /favicon.png
 logo: /favicon.png
