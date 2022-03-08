@@ -1,4 +1,93 @@
-<!DOCTYPE html><html lang="zh-tw"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Petingo</title><meta name="description" content="A Blog Powered By Hexo"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css"><script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><link rel="search" type="application/opensearchdescription+xml" href="https://blog.petingo.ch/atom.xml" title="Petingo"><meta name="generator" content="Hexo 4.2.1"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="https://petingo.ch/" target="_blank" class="nav-list-link">PORTFOLIO</a></li></ul></header><main class="container"><ul class="home post-list"><li class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/Beihang-Day-1/" class="post-title-link">北航 Day 1</a></h2><div class="post-content"><p><img src="/Beihang-Day-1/DSCF4585-min.JPG" alt="飛機"><br>
+<!DOCTYPE html><html lang="zh-tw"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Petingo</title><meta name="description" content="A Blog Powered By Hexo"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css"><script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><link rel="search" type="application/opensearchdescription+xml" href="https://blog.petingo.ch/atom.xml" title="Petingo"><meta name="generator" content="Hexo 4.2.1"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="https://petingo.ch/" target="_blank" class="nav-list-link">PORTFOLIO</a></li></ul></header><main class="container"><ul class="home post-list"><li class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/Highway-Average-Speed-Prediction/" class="post-title-link">高速公路車速預測</a></h2><div class="post-content"><h2 id="資料集與目標"><a class="markdownIt-Anchor" href="#資料集與目標"></a> 資料集與目標</h2>
+<p>此為物聯網與資料分析的作業五，本題旨在利用高速公路交通流量資料，來預估 30 分鐘後的平均車速；下表為資料各欄位的詳細說明</p>
+<table>
+<thead>
+<tr>
+<th>欄位名稱</th>
+<th>內容介紹</th>
+<th>資料格式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Timestamp</td>
+<td>The time時間MM/DD/YYYY HH24:MI:SS. （5 分鐘）</td>
+<td>timestamp</td>
+</tr>
+<tr>
+<td>Station ID</td>
+<td>高速公路站點ID （這次資料全部都是1108687）</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>Freeway</td>
+<td>高速公路ID （這次資料全部都是5）</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>Direction of Travel</td>
+<td>站點的道路通往方向（東西南北） （這次資料全部都是N）</td>
+<td>string</td>
+</tr>
+<tr>
+<td>Station Type</td>
+<td>ML = Main line 主線道</td>
+<td>string</td>
+</tr>
+<tr>
+<td>Samples</td>
+<td>全部道路（lanes）5分鐘內有多少sample</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>% Observed</td>
+<td>全部道路之觀察數據比例	 [（觀察筆數+缺失填入筆數）/全資料數]</td>
+<td>percentage</td>
+</tr>
+<tr>
+<td>Total Flow</td>
+<td>全部道路5分鐘內車流量 。 （少於10筆資料的使他乘以（10/好樣本數量））	（-1代表無資料）</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>Average Occupancy</td>
+<td>五分鐘內所有道路的平均佔有率 （某時段內偵測到車子的頻率）</td>
+<td>percentage</td>
+</tr>
+<tr>
+<td>Average Speed</td>
+<td>所有車道在5分鐘内的流量加權平均速度mph（每條道路速度每條道路流量加總 / 每條道路流量加總）</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Lane “N” Samples</td>
+<td>第N道路之5分鐘內sample數量</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>Lane “N” Flow</td>
+<td>第N道路之5分鐘內所有流量 。（少於10筆資料的使他乘以（10/樣本數量））</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>Lane ”N” Average Occupancy</td>
+<td>第N道路之平均佔有率</td>
+<td>percentage</td>
+</tr>
+<tr>
+<td>Lane ”N” Average Speed</td>
+<td>第N道路之平均速度</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Lane “N” Observed</td>
+<td>第N道路之觀察數據比例 （觀察筆數+缺失填入筆數）/全資料數</td>
+<td>percentage</td>
+</tr>
+</tbody>
+</table></div><a href="/Highway-Average-Speed-Prediction/" class="read-more">...閱讀全文</a></article></li><li class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/One-Month-In-China/" class="post-title-link">去了中國一個月</a></h2><div class="post-content"><p>其實原本是打算每天晚上睡覺前寫點什麼，紀錄一下每天看到的、想到的、感受到的人事物。<br>
+<del>結果…連第一天的日記都只打了草稿，只好來寫月記了。</del><br>
+結果寫完 Day 1 之後就完全忘記這回事了，現在連回憶錄都可能都寫不出來了…（2020/4/1，布拉格）</p></div><a href="/One-Month-In-China/" class="read-more">...閱讀全文</a></article></li><li class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/Beihang-Day-1/" class="post-title-link">北航 Day 1</a></h2><div class="post-content"><p><img src="/Beihang-Day-1/DSCF4585-min.JPG" alt="飛機"><br>
 第一次出國，第一次一個人出國。<br>
 我現在能安心的坐在床上寫這些廢話也是歷經了一番神奇的旅程。</p></div><a href="/Beihang-Day-1/" class="read-more">...閱讀全文</a></article></li><li class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/The-Tatami-Galaxy/" class="post-title-link">四疊半神話大系</a></h2><div class="post-content"><p><img src="/The-Tatami-Galaxy/title-min.png" alt="標題"></p>
 <p>看完最大的心得大概是「不要宅在家裡，多出去認識一些人」這樣吧。<br>
