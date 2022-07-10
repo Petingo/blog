@@ -65,7 +65,7 @@ tags: 碩班申請
 * 科技部大專生研究計畫
 
 ### Portfolio
-- https://petingo.de/
+- https://petingo.ch/
   這個連結我有寫在 CV 裡面。後來我看 Google Analysis 有瑞士的 IP 連進來看，看了
 
 大概一分鐘，感覺應該是 EPFL 的 committee。

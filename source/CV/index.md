@@ -4,7 +4,7 @@ layout: empty
 ---
 
 # Yang Hong-Bin
-[Link to Portfolio](https://petingo.de)
+[Link to Portfolio](https://petingo.ch)
 hong-bin.yang@epfl.ch
 Lausanne, Switzerland
 
