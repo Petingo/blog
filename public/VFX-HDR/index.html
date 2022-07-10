@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="zh-tw"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> VFX Project - HDR · Petingo</title><meta name="description" content="VFX Project - HDR - Petingo"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css"><script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><link rel="search" type="application/opensearchdescription+xml" href="https://blog.petingo.ch/atom.xml" title="Petingo"><meta name="generator" content="Hexo 4.2.1"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="https://petingo.ch/" target="_blank" class="nav-list-link">PORTFOLIO</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">VFX Project - HDR</h1><div class="post-content"><p><img src="https://i.imgur.com/6blOFBm.jpg" alt></p>
+<p>In this project, we implemented Paul Debevec’s method to assemble an HDR image. For extension, we implemented MTB alignment algotirhm.</p>
+<p>Link to Code: <a href="https://github.com/Petingo/HDR" target="_blank" rel="noopener">Github</a></p>
+<a id="more"></a>
+<h2 id="run-the-code"><a class="markdownIt-Anchor" href="#run-the-code"></a> Run the code</h2>
+<p>Use python3 to run the code, and the <code>dataset</code> is the path to image resource.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd code</span><br><span class="line">python3 HDR.py ../dataset</span><br><span class="line">python3 HDR-YUV.py ../dataset</span><br></pre></td></tr></table></figure>
+<p><a href="https://pypi.org/project/opencv-python/" target="_blank" rel="noopener">openCV</a> and <a href="https://pypi.org/project/ExifRead/" target="_blank" rel="noopener">exifread</a> is necessory to run the program.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install opencv-python</span><br><span class="line">pip install ExifRead</span><br></pre></td></tr></table></figure>
+<h2 id="hdr"><a class="markdownIt-Anchor" href="#hdr"></a> HDR</h2>
+<p>For HDR image recovery, we implemented Paul Debevec’s method.</p>
+<h3 id="using-rgb-channels"><a class="markdownIt-Anchor" href="#using-rgb-channels"></a> Using RGB channels</h3>
+<ol>
+<li>
+<p>Separate the image into RGB channels.</p>
+</li>
+<li>
+<p>For each channel, we randomly choose 100 pixels to find its response curve. For solving the over-determined linear system, we use numpy’s <code>lstsq</code> function.<br>
+<img src="https://i.imgur.com/AmPK6G1.png" alt></p>
+</li>
+<li>
+<p>Construct the raidance map for each channel and merge them together.  Then, we can get the HDR image.<br>
+<img src="https://i.imgur.com/6qSiETR.jpg" alt></p>
+</li>
+<li>
+<p>Tone mapping</p>
+<p>We tried to implement the Gradient Domain algorithm for tone mapping, which should have worked fine if coded properly, but we failed to do so. (The code is still included.) We now use openCV’s built-in tone mapping method to transfer the HDR image into a LDR one.</p>
+<p><img src="https://i.imgur.com/wwx05K5.jpg" alt></p>
+<p>However, though the quality is tolerable, some overexposed spots we can’t eliminate appear in some cases.</p>
+</li>
+</ol>
+<h3 id="using-ycbcr-channels"><a class="markdownIt-Anchor" href="#using-ycbcr-channels"></a> Using YCbCr channels</h3>
+<p>Then, we tried to convert the color space from RGB to YCbCr, and only reconstruct the HDR image of Y channel, which represents the luminance. For the chroma channels, we weighted average them by the luminance difference between the original photos and the recovered one. With this method, the color is better preserved, and the recovered HDR image seems more like the original photo. However, it sometimes results in strange HDR image which has too strong color saturation.<br>
+<img src="https://i.imgur.com/6blOFBm.jpg" alt></p>
+<h2 id="alignment"><a class="markdownIt-Anchor" href="#alignment"></a> Alignment</h2>
+<p>Here is an example of the result of our MTB alignment. The two HDR images are generated from the same image set, but the right one was processed after aligning.</p>
+<p><img src="https://i.imgur.com/SNhzjrN.png" alt></p>
+<h2 id="what-we-learned"><a class="markdownIt-Anchor" href="#what-we-learned"></a> What We Learned</h2>
+<p>The most interesting part of this project is how response curve is constructed. It is our first time to know how math, especially linear algebra, is so important for creating and implementing an algorithm.</p>
+<h2 id="team-member"><a class="markdownIt-Anchor" href="#team-member"></a> Team Member</h2>
+<p>Me &amp; ZL Yu</p>
+</div><div class="post-info">2019年4月4日</div><div class="tags"><a href="/tags/Small-Project/" class="tag-title">#Small Project</a></div></article></div></main><footer><div class="paginator"><a href="/brain-wash-school/" class="prev">上一篇</a><a href="/Highway-Average-Speed-Prediction/" class="next">下一篇</a></div><div class="copyright"><p>© 2018 - 2022 <a href="https://blog.petingo.ch">Petingo</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-xxxxxxxxx-1",'auto');ga('send','pageview');</script></body></html>

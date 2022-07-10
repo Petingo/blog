@@ -1,7 +1,7 @@
 ---
 title: 一些很有感觸的句子
 date: 1998-07-14 00:00:00
-tags:
+tags: 
 ---
 
 這裡放了一些我覺得讓我感觸很深的句子。
@@ -22,6 +22,11 @@ tags:
 >
 >——  [Andy's iPhone](https://www.youtube.com/channel/UCw0kJy7-1qCGXEnE8IPet7w)
 ，[幹這根本有病#11 愛與拖稿](https://www.youtube.com/watch?v=mck0zEWZQic&lc=UgwNEaNOUbLKDSaLAY54AaABAg)
+
+---
+
+2020.05.08
+> 人們害怕不平凡的事物。在平凡中出眾，在不凡裡普通。
 
 ---
 
