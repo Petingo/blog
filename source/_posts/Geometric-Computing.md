@@ -6,11 +6,9 @@ tags:
  - "Small Project"
 ---
 
-### ( * This post is still under construction * )
-
 ![](https://i.imgur.com/gq2W5tH.png)
 
-Mark Pauly 教授跟 Geometric Computing 應該算是我來 EPFL 的一大原因。
+Mark Pauly 教授跟 Geometric Computing 應該算是我想來 EPFL 的原因之一。
 
 我總覺得 Geometric Computing 是電腦圖學的反義詞；圖學用電腦創造虛擬的世界，Geometric Computing 則在模擬真正的現實。
 
