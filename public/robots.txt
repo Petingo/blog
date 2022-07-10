@@ -1,8 +1,0 @@
-User-agent: *
-Allow: /index.html
-Allow: /archives/index.html
-Allow: /about/index.html
-Allow: /gallery/index.html
-Allow: /tag-cloud/tagcloud-min.js
-Allow: /tag-cloud/tagcanvas-min.js
-Sitemap: /sitemap.xml
