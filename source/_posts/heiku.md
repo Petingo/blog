@@ -7,10 +7,23 @@ tags:
 這裡放了一些我覺得讓我感觸很深的句子。
 
 <!--more-->
+2022.8.3
+> 我々の大半の苦悩は、あり得べき別の人生を夢想することから始まる。自分の可能性という当てにならないものに望みを託すことが諸悪の根源だ。今ここにある君意外、ほかの何者にもなれない自分を認めなくてはいけない。
+四疊半
+
+---
+
+2022.8.3
+> If you don't build your dreams, then someone else will hire you to build theirs.
+https://youtu.be/ZvCGppdE2E0?t=236
+
+---
 
 2022.07.13
 > The key to being happy isn't the search for meaning. It's to keep yourself busy with unimportant nonsense and eventually, you'll be dead.
 — Mr. Peanut Butter／《馬男波傑克》
+
+---
 
 2022.07.10 [出處：幹這根本有病#11 愛與拖稿](https://www.youtube.com/watch?v=mck0zEWZQic&lc=UgwNEaNOUbLKDSaLAY54AaABAg)
 > 「...如果每個人的生活跟朋友都像影片中一樣有趣和瘋狂，那這個頻道大概就不會那麼有吸引力了，然而會喜歡這些影片的觀眾，應該有些人正過著有點乏味的日子（例如我），所以這些影片就不只是朋友間的生活紀錄，更像是一種無法得到卻又極度渴望的夢，雖然真的很高興發現這個頻道，但看完後回頭面對現實，會有種莫名的空虛感，有點像拎娘說的『永遠在追求得不到的東西』吧。」
@@ -27,7 +40,6 @@ tags:
 > Anyway, wish you the best
 >
 >——  [Andy's iPhone](https://www.youtube.com/channel/UCw0kJy7-1qCGXEnE8IPet7w)
-
 
 
 ---

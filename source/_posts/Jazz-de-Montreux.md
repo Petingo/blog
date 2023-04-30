@@ -12,7 +12,7 @@ tags: 瑞士
 <!-- more -->
 ![](sp-guitar.JPG)（一走進來就看到一個彈奏神奇樂器的街頭藝人）
 
-到了 Montreux 以後，先是逛了一圈攤位，才想到忘了先從超商買酒，只好再繞一圈跑回車站。回程的時候遇到一個彈奏爵士吉他的小哥，旁邊還寫了一塊牌子：「All the hotel is full today, I'm looking for a couch to stay. You can exchange for a guitar course or a concert.」猶豫許久以後，終於鼓起勇氣跟他說，如果找不到地方的話可以來住我家；沒想到加 What's App 的時候，他看到我打 +886，就直接問：「Is it Taiwan？」當場又驚又喜，原來是他之前在斯里蘭卡的時候遇過一位台灣人，就這樣記了起來。
+到了 Montreux 以後，先是逛了一圈攤位，才想到忘了先從超商買酒，只好再繞一圈跑回車站。回程的時候遇到一個彈奏爵士吉他的小哥，旁邊還寫了一塊牌子：「All the hotels are full today, I'm looking for a couch to stay. You can exchange for a guitar course or a concert.」猶豫許久以後，終於鼓起勇氣跟他說，如果找不到地方的話可以來住我家；沒想到加 What's App 的時候，他看到我打 +886，就直接問：「Is it Taiwan？」當場又驚又喜，原來是他之前在斯里蘭卡的時候遇過一位台灣人，就這樣記了起來。
 
 回到會場時，原本空無一人的廣場已經擠滿了人，舞台上演奏著很鄉村法語歌（和一首很印度 style 的），雖然不是 Jazz 但是很讚！
 
@@ -35,7 +35,7 @@ tags: 瑞士
 
 ![](sax.JPG)
 
-果然不失所望。鋼琴、薩克斯風、五弦貝斯、鼓共同敲出了搖滾 Jazz 的形狀。雖然原本很期待會出現我心目中那種慢節奏、緩緩前進的 Jazz，但我覺得也心滿意足了。
+果然不失所望。鋼琴、薩克斯風、五弦貝斯、鼓共同敲出了 Jazz 的形狀，算是也心滿意足了。
 
 不過好景不常（？），一輪 Hi 歌以後，突然從幕後出現了兩個 Rapper，原本吹薩克斯風的老哥也改行拿起麥克風說唱，直接開始夜店舞曲；很 Hi 是很 Hi，但真的不是我的風格。
 
